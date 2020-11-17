@@ -35,7 +35,3 @@ mongoose
   });
 
 mongoose.set('useFindAndModify', false);
-
-// app.listen(PORT, () => {
-//     console.log('liten');
-// });
