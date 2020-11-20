@@ -15,7 +15,7 @@ import postRoutes from './routes/posts.js';
 
 ///   connecting to atlas
 const CONNECTION_URL =
-  'mongodb+srv://mernfulllstack:moti2003@cluster0.544zv.mongodb.net/<dbname>?retryWrites=true&w=majority';
+  'mongodb://localhost:27017/memories?readPreference=primary&ssl=false';
 
 // setting port
 const PORT = process.env.PORT || 5000;

@@ -46,3 +46,11 @@ export const updatePost = async (req, res) => {
     res.status(400).send('error updating');
   }
 };
+
+export const deletePost = async (req, res) => {
+  try {
+    const deletedPost = await PostMessage.findByIdAndDelete(req.params.id);
+
+    res.status(200).json(deletedPost);
+  } catch (error) {}
+};
